@@ -550,6 +550,9 @@ body {
 	border-radius: 5px;
 	margin-bottom: 25px;
 	display: inline-block;
+	@media (max-width: 992px){
+		margin-bottom: 10px;
+	}
 }
 .test__list {
 	display: flex;
@@ -618,6 +621,11 @@ body {
 			}
 		}
 	}
+	@media (max-width: 550px){
+		li{
+			flex: 0 0 50px;
+		}
+	}
 }
 .test__link {
 	line-height: 21px;
@@ -627,11 +635,17 @@ body {
 	&:hover {
 		font-weight: 700;
 	}
+	@media (max-width: 550px){
+		font-size: 12px;
+	}
 }
 .test__board {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	@media (max-width: 992px){
+		flex-direction: column-reverse;
+	}
 }
 .test__canvas {
 	flex: 1 1 auto;
@@ -639,6 +653,9 @@ body {
 	box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	padding: 25px;
+	@media (max-width: 550px){
+		padding: 10px;
+	}
 }
 .test__question {
 	font-weight: 500;
@@ -647,11 +664,18 @@ body {
 	letter-spacing: 0.1px;
 	color: #5e5c5c;
 	margin-bottom: 27px;
+	@media (max-width: 992px){
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
 }
 .test__form {
 }
 .test__form-options {
 	margin-bottom: 24px;
+	@media (max-width: 992px){
+		margin-bottom: 10px;
+	}
 }
 .test__form-option {
 	margin-bottom: 15px;
@@ -689,6 +713,9 @@ body {
 	&.active:after {
 		background: url("../img/icons/tick.svg") 0 0/11px no-repeat;
 	}
+	@media (max-width: 550px){
+		padding-left: 25px;
+	}
 }
 .test__form-interact {
 	select {
@@ -706,6 +733,14 @@ body {
 		appearance: none;
 		outline: 0;
 		background: url("../img/icons/select.svg") 93% 55% no-repeat;
+	}
+	@media (max-width: 992px){
+		display: flex;
+		flex-direction: column-reverse;
+		select{
+			margin-left: 0;
+			margin-bottom: 10px;	
+		}
 	}
 }
 .answer {
@@ -729,6 +764,13 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: 992px){
+		flex-direction: row-reverse;
+		margin: 0 0 10px 0;
+	}
+	@media (max-width: 550px){
+		flex: 1 1 60px;
+	}
 }
 .test__help {
 	white-space: nowrap;
@@ -748,5 +790,12 @@ body {
 .test__image {
 	img {
 		max-width: 100%;
+	}
+	@media (max-width: 992px){
+		height: 140px;
+		overflow: hidden;
+	}
+	@media (max-width: 550px){
+		height: 80px;
 	}
 }
