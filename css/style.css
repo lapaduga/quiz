@@ -124,6 +124,7 @@ body {
     overflow-y: auto;
   }
   .aside.passive {
+    width: 50px;
     overflow-y: hidden;
   }
 }
@@ -177,6 +178,9 @@ body {
     top: 0;
     left: 210px;
   }
+  .aside__hide.passive {
+    left: 0px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -187,8 +191,8 @@ body {
   }
   .aside__hide.passive {
     position: fixed;
-    top: 150px;
-    left: 40px;
+    top: 100px;
+    left: 20px;
   }
 }
 
@@ -268,6 +272,9 @@ body {
 @media (max-width: 767px) {
   .main {
     margin-left: 270px;
+  }
+  .main.passive {
+    margin-left: 50px;
   }
 }
 
@@ -716,7 +723,7 @@ body {
   .profile__image.passive {
     position: fixed;
     top: 20px;
-    left: 16px;
+    left: 6px;
   }
 }
 

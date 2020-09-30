@@ -28,6 +28,7 @@ body {
 		width: 250px;
 		overflow-y: auto;
 		&.passive {
+			width: 50px;
 			overflow-y: hidden;
 		}
 	}
@@ -67,6 +68,9 @@ body {
 	@media (max-width: 767px) {
 		top: 0;
 		left: 210px;
+		&.passive {
+			left: 0px;
+		}
 	}
 	@media (max-width: 520px) {
 		position: fixed;
@@ -74,8 +78,8 @@ body {
 		left: 90%;
 		&.passive {
 			position: fixed;
-			top: 150px;
-			left: 40px;
+			top: 100px;
+			left: 20px;
 		}
 	}
 }
@@ -139,6 +143,9 @@ body {
 	}
 	@media (max-width: 767px) {
 		margin-left: 270px;
+		&.passive {
+			margin-left: 50px;
+		}
 	}
 	@media (max-width: 520px) {
 		display: none;
@@ -419,7 +426,7 @@ body {
 		&.passive {
 			position: fixed;
 			top: 20px;
-			left: 16px;
+			left: 6px;
 		}
 	}
 }
@@ -668,8 +675,6 @@ body {
 		font-size: 14px;
 		margin-bottom: 10px;
 	}
-}
-.test__form {
 }
 .test__form-options {
 	margin-bottom: 24px;
