@@ -399,10 +399,10 @@ body {
 
 @media (max-width: 1151px) {
   .main__card {
-    margin: 10px 10px 10px 0;
+    margin: 0px 20px 20px 0;
   }
   .main__card:nth-child(odd) {
-    margin: 10px 20px 10px 0;
+    margin: 0px 20px 20px 0;
   }
 }
 
